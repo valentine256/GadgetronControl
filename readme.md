@@ -8,7 +8,7 @@ It is implemented with Node.js on the server-side and a backbone on the client-s
 Assuming you are running it inside the gadgetron docker image or having gadgetron set up properly.
 ```bash
 sudo apt-get install npm nodejs-legacy
-git clone https://github.com/thomaskuestner/GadgetronControl
+git clone https://github.com/gadgetron/GadgetronControl
 cd GadgetronControl
 npm install
 npm start
@@ -35,7 +35,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GADGETRON_HOME/lib:$ISMRMRD_HOME/lib
 ## Installation script
 For installation and startup you can use the following script. 
 ```bash
-git clone https://github.com/thomaskuestner/GadgetronControl
+git clone https://github.com/gadgetron/GadgetronControl
 cd GadgetronControl
 # install GadgetronControl dependencies
 npm install
