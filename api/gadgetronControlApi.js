@@ -29,7 +29,8 @@ module.exports = function(app, config){
             var commandExists = require('command-exists');
             commandExists('gadgetron', function(err, commandExists) {
               if(commandExists) {
-                var gadgetronServer = spawn('gadgetron',['-p', config.gadgetron_port, '-r', config.gadgetron_relay_host, '-l', config.gadgetron_relay_port]);
+                // var gadgetronServer = spawn('gadgetron',['-p', config.gadgetron_port, '-r', config.gadgetron_relay_host, '-l', config.gadgetron_relay_port]);
+                var gadgetronServer = spawn('gadgetron',['-p', config.gadgetron_port]);
                 var logstream = fs.createWriteStream(config.gadgetron_log, {flags: 'a'});
                 gadgetronServer.stdout.pipe(logstream);
                 gadgetronServer.stderr.pipe(logstream);
